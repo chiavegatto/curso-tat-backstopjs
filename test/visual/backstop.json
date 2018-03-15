@@ -57,6 +57,15 @@
       "postInteractionWait": ".delete-item-confirmation",
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
+    },
+    {
+      "label": "Create item page - required fields",
+      "url": "http://localhost:4001/items/create",
+      "readySelector": ".submit-button",
+      "clickSelector": ".submit-button",
+      "postInteractionWait": ".error",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
     }
   ],
   "paths": {
