@@ -30,6 +30,16 @@
       "postInteractionWait": ".create-container",
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
+    },
+    {
+      "label": "Item page",
+      "url": "http://localhost:4001/",
+      "readySelector": ".item-card",
+      "clickSelector": ".item-view",
+      "postInteractionWait": ".single-item-container",
+      "hideSelectors": [".item-id"],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
     }
   ],
   "paths": {
