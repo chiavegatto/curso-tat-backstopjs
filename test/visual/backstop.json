@@ -66,6 +66,13 @@
       "postInteractionWait": ".error",
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
+    },
+    {
+      "label": "Update item page",
+      "url": "http://localhost:4001",
+      "onReadyScript": "chromy/custom/goToEditItemPage.js",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
     }
   ],
   "paths": {
