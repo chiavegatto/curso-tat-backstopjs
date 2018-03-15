@@ -1,0 +1,40 @@
+{
+  "id": "curso_backstop_tat",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1280,
+      "height": 1024
+    },
+    {
+      "label": "table",
+      "width": 1024,
+      "height": 768
+    }
+  ],
+  "onBeforeScript": "chromy/onBefore.js",
+  "onReadyScript": "chromy/onReady.js",
+  "scenarios": [
+    {
+      "label": "Homepage with items",
+      "url": "http://localhost:4001/",
+      "readySelector": ".item-card",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": [],
+  "engine": "chrome",
+  "engineFlags": [],
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
