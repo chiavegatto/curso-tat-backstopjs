@@ -8,7 +8,9 @@
     "start": "node ./bin/www",
     "test": "npm run test:mocha && npm run test:feature",
     "test:mocha": "bin/mocha-test",
-    "test:feature": "bin/wdio-test"
+    "test:feature": "bin/wdio-test",
+    "test:visual": "npm run drop-db && npm run seed-db && cd test/visual && rm -rf backstop_data/bitmaps_test && backstop test",
+    "test:visual:approve": "cd test/visual && backstop approve"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
