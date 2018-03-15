@@ -73,6 +73,14 @@
       "onReadyScript": "chromy/custom/goToEditItemPage.js",
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
+    },
+    {
+      "label": "header component",
+      "url": "http://localhost:4001",
+      "readySelector": "#title-container",
+      "selectors": ["#title-container"],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
     }
   ],
   "paths": {
