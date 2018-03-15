@@ -21,6 +21,15 @@
       "readySelector": ".item-card",
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
+    },
+    {
+      "label": "Create item page",
+      "url": "http://localhost:4001/",
+      "readySelector": "a[href='items/create']",
+      "clickSelector": "a[href='items/create']",
+      "postInteractionWait": ".create-container",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
     }
   ],
   "paths": {
